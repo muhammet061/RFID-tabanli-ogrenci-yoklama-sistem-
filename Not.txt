@@ -1,0 +1,5 @@
+//öğrenci kayıt işi bittikten sonra veri tabanında bu kodu çalıştırın!
+
+
+UPDATE ogrencilistesi
+SET KartID = LTRIM(RTRIM(REPLACE(KartID, CHAR(13) + CHAR(10), '')))
